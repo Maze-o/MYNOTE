@@ -35,8 +35,40 @@
   -TCP : 연결지향 신뢰도높음 (느리지만 보안이 좋다)
   -UDP : 비연결지향 신뢰도낮음 (빠르지만 보안이 좋지 않다)
 
+<h3>문제풀이는 github 참조</h3>
+---------------------------------
+</div>
+<h2>네트워크 실습 (2024.07.31)</h2>
+Routing Protocol - 라우터 2개 이상부터 사용
+1. 정적 Routing (수동으로 넣는방법) - Static(하나의 목적지에 대한 방향)과 
+				Default(지정하지않은 나머지 모든 방향)로 나눠짐
 
+2. 동적 Routing (프로그램이 알아서 넣는 방법)
 
+Route : 길/경로
+Router : 경로안내장치
+Routing : 길안내작업
+
+경로를 안내해주기 위해서 사용되는 프로토콜
+
+응용Sw기초기술활용 > 01 네트워크 기초활용하기 > 05 Routing > 정적라우팅
+11번문제 시험에 똑같이 나옴 꼭 한번 다시 풀기!!
+
+DNS SERVICE (스마트폰의 주소록과 비슷한 역할) / SYSTEM / SERVER
+Domain Name Service / System / Server
+
+Domain : 영역
+Name : 이름
+Service : 제공하다
+
+WEB SERVICE 
+하이퍼텍스트 형식의 문서파일을 제공하는 서비스
+
+HTML
+Hyper Text Markup Language
+
+HTTP
+Hyper Text Transfer Protocol
 
 
 
