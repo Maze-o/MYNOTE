@@ -51,8 +51,12 @@ Routing : 길안내작업
 
 경로를 안내해주기 위해서 사용되는 프로토콜
 
-응용Sw기초기술활용 > 01 네트워크 기초활용하기 > 05 Routing > 정적라우팅
+1. IP입력
+
+2.응용Sw기초기술활용 > 01 네트워크 기초활용하기 > 05 Routing > 정적라우팅
 11번문제 시험에 똑같이 나옴 꼭 한번 다시 풀기!!
+
+3.응용Sw기초기술활용 > 01 네트워크 기초활용하기 > 05 Routing > RIP DNS+HTTP > 6번문제
 
 DNS SERVICE (스마트폰의 주소록과 비슷한 역할) / SYSTEM / SERVER
 Domain Name Service / System / Server
