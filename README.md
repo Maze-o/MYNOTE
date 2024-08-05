@@ -75,7 +75,31 @@ HTTP
 Hyper Text Transfer Protocol
 
 
+프로젝트 메모
 
+개념(조직화,관계도,그림,무슨 기능을 넣을것인지) -> 논리(탭에 대한 필요한 세부항목) -> 물리(개발환경 구축)
+draw.io
+
+주유소 정보 만들 예정.
+
+기능 - 주유소 위치(지도에서 반경 내 위치), 가격(평균가격, 경유, 휘발유)
+-주유소 api, 지도 api 필요
+
+-스프링부트, 타임리프, 마이바티스
+
+io.start.spring 사이트를 이용하면 쉽게 프로젝트 템플릿 파일을 얻을 수 있다
+
+빌드구성 - maven or gradle . gradle 픽
+편집툴 - 이클립스
+DBMS - 오라클
+DB Connect - JPA
+View Template - thymeleaf
+배포파일 - BootWar
+배포서버 -
+AWS EC2 - AWS 정식 서버 버젼, 1년 무료후 유료(유료가 비쌈. 몇만원대)
+AWS 라이트세일 - AWS 가상서버 버전, 3달무료 후 한달에 5천원 발생. 사용량 만큼이므로 잠시 정지시켜 두거나, 필요없을시 지워도 됨.
+
+https://blog.naver.com/nissisoft21/222802517122
 
 
 
