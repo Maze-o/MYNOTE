@@ -51,22 +51,28 @@ Routing : 길안내작업
 
 경로를 안내해주기 위해서 사용되는 프로토콜
 
-1. IP입력
+1. IP입력		
 
-2.응용Sw기초기술활용 > 01 네트워크 기초활용하기 > 05 Routing > 정적라우팅
-11번문제 시험에 똑같이 나옴 꼭 한번 다시 풀기!!
+2.응용Sw기초기술활용 > 01 네트워크 기초활용하기 > 05 Routing > 정적라우팅		
+11번문제 시험에 똑같이 나옴 꼭 한번 다시 풀기!!		
 
-3.응용Sw기초기술활용 > 01 네트워크 기초활용하기 > 05 Routing > RIP DNS+HTTP > 6번문제
+3.응용Sw기초기술활용 > 01 네트워크 기초활용하기 > 05 Routing > RIP DNS+HTTP > 6번문제		
 
-DNS SERVICE (스마트폰의 주소록과 비슷한 역할) / SYSTEM / SERVER
+4. 미들웨어 구축 문제		
+
+5. mysql DB - Database -  Forward Engineer(다이어그램 DB테이블로 바꾸기) , Reverser Engineer(DB테이블 다이어그램으로 바꾸기
+
+6. crud		
+
+DNS SERVICE (스마트폰의 주소록과 비슷한 역할) / SYSTEM / SERVER		
 Domain Name Service / System / Server
+    
+Domain : 영역		
+Name : 이름		
+Service : 제공하다		
 
-Domain : 영역
-Name : 이름
-Service : 제공하다
-
-WEB SERVICE 
-하이퍼텍스트 형식의 문서파일을 제공하는 서비스
+WEB SERVICE 		
+하이퍼텍스트 형식의 문서파일을 제공하는 서비스		
 
 HTML
 Hyper Text Markup Language
@@ -101,6 +107,10 @@ AWS 라이트세일 - AWS 가상서버 버전, 3달무료 후 한달에 5천원 
 
 https://blog.naver.com/nissisoft21/222802517122
 
+
+<h2>2024 08 06</h2>
+시험에 나옴 	
+mysql DB - Database -  Forward Engineer(다이어그램 DB테이블로 바꾸기) , Reverser Engineer(DB테이블 다이어그램으로 바꾸기)		
 
 
 
