@@ -110,7 +110,128 @@ https://blog.naver.com/nissisoft21/222802517122
 
 <h2>2024 08 06</h2>
 시험에 나옴 	
-mysql DB - Database -  Forward Engineer(다이어그램 DB테이블로 바꾸기) , Reverser Engineer(DB테이블 다이어그램으로 바꾸기)		
+mysql DB - Database -  Forward Engineer(다이어그램 DB테이블로 바꾸기) , Reverser Engineer(DB테이블 다이어그램으로 바꾸기)
+
+<h2>2024 08 07</h2>				
+리눅스 (Ubuntu)		
+
+명령어 종류.
+passwd ifconfig pwd cd ls mkdir touch cp mv rm cat head tail more > vi		
+
+
+
+
+
+  
+1. repo update		
+sudo = 다른 계정으로 변경할때 사용(Root권한 사용)		
+sudo apt update		
+		
+2. ssh Service install		
+ssh service 다운로드		
+sudo apt install openssh-server		
+		
+설치확인 - sudo systemctl status ssh		
+sudo systemctl restart ssh		
+
+3. 방화벽		
+ufw - ubuntu firewall 약자
+sudo ufw allow ssh 
+
+sudo systemctl enable ssh - 자동으로 실행 될수 있도록
+
+Consolas 체 사용 권장		
+		
+			
+LINUX OS 특징		
+무료		
+오픈소스 - 원하는 형태의 리눅스를 만들수 있다		
+C언어로 만들었기때문에 플랫폼에 독립적 사용이 가능 (지금은 그닥 의미 없다. (미들웨어를 사용하기때문에))	 	
+
+user1@user1-VirtualBox:~$ 에서 ~(현재 작업위치) $(계정 구분기호) $(일반) #(관리자)		
+sudo su - 관리자계정으로 전환
+passwd user1 user1의 비밀번호를 바꾸기 (관리자계정에서)		
+
+ifconfig 쓰기 위해 apt install net-tools
+
+
+cp 		
+-i 질의 -yes or no		
+-r 디렉토리 복사		
+-p 보존복사 		
+
+
+시험문제에 나옴 - 리눅스 기본명령어 1 -> 문제2 		
+1. /etc/login.defs /etc/passwd /boot/grub2/grub.cfg 파일을 확인하고		
+   3개의 파일 /backup 디렉토리 생성한 뒤 복사
+
+   ls -l /etc/login.defs /etc/passwd /boot/grub/grub.cfg
+   mkdir /backup
+   cp /etc/login.defs /etc/passwd /boot/grub/grub.cfg /backup
+		
+3. /backup에 있는 3개의 파일		
+   /backup/test 디렉토리에 각각 login pass grub 란 이름으로 이름변경 복사
+
+   mkdir /backup/test	
+   cp ./login.defs login
+   cp ./passwd test.pass
+   cp ./grub.cfg test/grub	
+				
+5. /backup에 test1 이라는 파일 ,				
+	/backup/test 에 test2 라는 파일을 한줄명령어로 생성		
+	touch /backup/test1 /backup/test2		
+		
+				
+7. /backup/test 디렉토리를				
+	 /home/test/c/d/linux란 이름이 되도록  이름변경 보존 복사		
+	mkdir -p /home/test/c/d		
+	cp -rp /backup/test /home/test/c/d/linux		
+				
+9. /home으로 이동(cd /home) 한뒤				
+	경로를 변경하지 않고 /backup안에 있는 파일들 4개를 /home/test/c/d/linux		
+	 디렉토리에 한줄명령으로 보존복사 (이름변경및 디렉토리 복사 금지)			
+		
+   cd /home 			
+   cp /backup/grub.cfg /backup/login.defs /backup/passwd /backup/test1 /home/test/c/d/linux			
+ 		
+		
+cat/ head&tail 문제 나옴		
+		
+1. /output 디렉토리 만든 후 /etc/passwd,  /etc/login.defs 를 복사		
+mkdir /output		
+cp -r /etc/passwd /etc/login.defs /output			
+		
+2./output/login.defs 의 내용을 위에서부터 5줄만 확인하세요		
+head -5 /output/login.defs		
+		
+3./output/inittab 의 내용을 아래서부터 5줄만 확인하세요		
+tail -5 /output/inittab 		
+		
+4./output/passwd의 내용을 화면 크기만큼 끊어서 확인하세요		
+more /output/passwd		
+			
+5. /output/passwd의 내용을 행번호를 붙여서 확인해보세요		
+6. cat -n /output/passwd		
+
+
+시험에 표준출력 리다이렉션만 나옴		
+		
+ls -l /etc > b    =   etc 안에있는 내용을 b파일으로 복사		
+		
+1. /etc안의 디렉토리의 목록을 /retest/a에 저장하세요	
+	ls -l /etc > /retest/a				
+ 		
+3. /etc/passwd의 위에서 7번째 행까지의 내용을 /retest/b에 저장하세요				
+	head -7 /etc/passwd > /retest/b				
+			
+5. /etc/inittab의 아래에서 4번째 행까지의 내용을 /retest/c에 저장하세요		
+	tail -4 /etc/inittab > /retest/c	
+		
+7. /retest 안의 a,b,c,의 내용을 병합하는 d 파일을 만드세요		
+   	cat /retest/{a b c} > d			
+
+
+
 
 
 
