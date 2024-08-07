@@ -161,73 +161,68 @@ cp
 -p 보존복사 		
 		
 		
-시험문제에 나옴 - 리눅스 기본명령어 1 -> 문제2 		
-1. /etc/login.defs /etc/passwd /boot/grub2/grub.cfg 파일을 확인하고				
-   3개의 파일 /backup 디렉토리 생성한 뒤 복사		
+시험문제에 나옴 - 리눅스 기본명령어 1 -> 문제2 		<br/>
+1. /etc/login.defs /etc/passwd /boot/grub2/grub.cfg 파일을 확인하고 3개의 파일 /backup 디렉토리 생성한 뒤 복사 <br/>
 		
-   ls -l /etc/login.defs /etc/passwd /boot/grub/grub.cfg		
-   mkdir /backup		
-   cp /etc/login.defs /etc/passwd /boot/grub/grub.cfg /backup		
+   ls -l /etc/login.defs /etc/passwd /boot/grub/grub.cfg		<br/>
+   mkdir /backup		<br/>
+   cp /etc/login.defs /etc/passwd /boot/grub/grub.cfg /backup		<br/>
 			
-3. /backup에 있는 3개의 파일		
-   /backup/test 디렉토리에 각각 login pass grub 란 이름으로 이름변경 복사		
+3. /backup에 있는 3개의 파일 /backup/test 디렉토리에 각각 login pass grub 란 이름으로 이름변경 복사		<br/>
 		
-   mkdir /backup/test		
-   cp ./login.defs login		
-   cp ./passwd test.pass		
-   cp ./grub.cfg test/grub	
+   mkdir /backup/test		<br/>
+   cp ./login.defs login		<br/>
+   cp ./passwd test.pass		<br/>
+   cp ./grub.cfg test/grub	<br/>
 				
-5. /backup에 test1 이라는 파일 ,				
-	/backup/test 에 test2 라는 파일을 한줄명령어로 생성		
+5. /backup에 test1 이라는 파일 ,	/backup/test 에 test2 라는 파일을 한줄명령어로 생성		<br/>
 	touch /backup/test1 /backup/test2		
 		
 				
-7. /backup/test 디렉토리를				
-	 /home/test/c/d/linux란 이름이 되도록  이름변경 보존 복사		
-	mkdir -p /home/test/c/d		
+7. /backup/test 디렉토리를 /home/test/c/d/linux란 이름이 되도록  이름변경 보존 복사		<br/>
+	mkdir -p /home/test/c/d		<br/>
 	cp -rp /backup/test /home/test/c/d/linux		
 				
-9. /home으로 이동(cd /home) 한뒤				
-	경로를 변경하지 않고 /backup안에 있는 파일들 4개를 /home/test/c/d/linux		
-	 디렉토리에 한줄명령으로 보존복사 (이름변경및 디렉토리 복사 금지)			
+9. /home으로 이동(cd /home) 한뒤	경로를 변경하지 않고 /backup안에 있는 파일들 4개를 /home/test/c/d/linux		
+	 디렉토리에 한줄명령으로 보존복사 (이름변경및 디렉토리 복사 금지)			<br/>
 		
-   cd /home 			
+   cd /home 			<br/>
    cp /backup/grub.cfg /backup/login.defs /backup/passwd /backup/test1 /home/test/c/d/linux			
  		
 		
 cat/ head&tail 문제 나옴		
 		
-1. /output 디렉토리 만든 후 /etc/passwd,  /etc/login.defs 를 복사		
-mkdir /output		
-cp -r /etc/passwd /etc/login.defs /output			
+1. /output 디렉토리 만든 후 /etc/passwd,  /etc/login.defs 를 복사	<br/>	
+mkdir /output		<br/>
+cp -r /etc/passwd /etc/login.defs /output	<br/>		
 		
-2./output/login.defs 의 내용을 위에서부터 5줄만 확인하세요		
+2./output/login.defs 의 내용을 위에서부터 5줄만 확인하세요		<br/>
 head -5 /output/login.defs		
 		
-3./output/inittab 의 내용을 아래서부터 5줄만 확인하세요		
+3./output/inittab 의 내용을 아래서부터 5줄만 확인하세요	<br/>	
 tail -5 /output/inittab 		
 		
-4./output/passwd의 내용을 화면 크기만큼 끊어서 확인하세요		
+4./output/passwd의 내용을 화면 크기만큼 끊어서 확인하세요		<br/>
 more /output/passwd		
 			
-5. /output/passwd의 내용을 행번호를 붙여서 확인해보세요		
+5. /output/passwd의 내용을 행번호를 붙여서 확인해보세요	<br/>	
 6. cat -n /output/passwd		
 		
 		
 시험에 표준출력 리다이렉션만 나옴		
 		
-ls -l /etc > b    =   etc 안에있는 내용을 b파일으로 복사		
+ls -l /etc > b    =   etc 안에있는 내용을 b파일으로 복사	<br/>	
 		
-1. /etc안의 디렉토리의 목록을 /retest/a에 저장하세요	
-	ls -l /etc > /retest/a				
+1. /etc안의 디렉토리의 목록을 /retest/a에 저장하세요	<br/>
+	ls -l /etc > /retest/a			<br/>	
  		
-3. /etc/passwd의 위에서 7번째 행까지의 내용을 /retest/b에 저장하세요				
+3. /etc/passwd의 위에서 7번째 행까지의 내용을 /retest/b에 저장하세요 <br/>				
 	head -7 /etc/passwd > /retest/b				
 			
-5. /etc/inittab의 아래에서 4번째 행까지의 내용을 /retest/c에 저장하세요		
+5. /etc/inittab의 아래에서 4번째 행까지의 내용을 /retest/c에 저장하세요	<br/>	
 	tail -4 /etc/inittab > /retest/c	
 		
-7. /retest 안의 a,b,c,의 내용을 병합하는 d 파일을 만드세요		
+7. /retest 안의 a,b,c,의 내용을 병합하는 d 파일을 만드세요		<br/>
    	cat /retest/{a b c} > d			
 
 
