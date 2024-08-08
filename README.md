@@ -227,6 +227,46 @@ ls -l /etc > b    =   etc 안에있는 내용을 b파일으로 복사	<br/>
 
 
 
+<h2>GIT 2024-08-08</h2>			
+		
+cmd - git init : .git 폴더 만들어짐.				
+		
+git status - git 상태 확인		
+		
+git add (t.txt) : stage area에 파일 등록		
+		
+git log --oneline : 로그를 한줄로 볼 수 있다.		
+		
+git reset --soft : commit 시점으로 돌아가서 작업할 수 있다.		     
+	  --hard : 
+   	  --mixed : 
+		
+주의 : 		
+깃허브에서 readme파일을 생성하는순간 branch가 하나 만들어지게돼버림.		
+로컬에서 repository를 넣을때 문제가 생김		
+
+1. 깃 푸시 할 파일에서 git init (깃생성) <br/>
+2. 2. git add *(모든 파일 넣기)<br/>
+3. git branch -M main(main을 메인 브랜치로 설정)<br/>
+4. 4. git commit -m "V0.0" (버전 명 commit)<br/>
+5. git remote add origin https://github.com/Maze-o/GIT-TEST.git (깃허브 사이트랑 연결)<br/>
+6. git remote -v (사이트랑 연결 되었는지 확인)<br/>
+7. git push origin (푸시 처음 하면 깃 푸시 셋을 하라고 나옴)<br/>
+8. git push --set-upstream origin main (푸시 설정)<br/>
+9. git push origin (깃허브 사이트로 푸시) <br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
