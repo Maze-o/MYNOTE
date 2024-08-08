@@ -223,7 +223,33 @@ ls -l /etc > b    =   etc 안에있는 내용을 b파일으로 복사	<br/>
 	tail -4 /etc/inittab > /retest/c	
 		
 7. /retest 안의 a,b,c,의 내용을 병합하는 d 파일을 만드세요		<br/>
-   	cat /retest/{a b c} > d			
+   	cat /retest/{a b c} > d			<br/>
+
+root root : 소유권<br/>
+rwxr-xr-x : 허가권<br/>
+<br/>
+r : read 읽기 : [문서] cat, head, tail, more (문서 내용 보기), [디렉토리] ls (목록보기) <br/>
+w : write 쓰기 : [문서] vi (문서 수정), [디렉토리] cp,touch,mv (생성,수정,삭제) <br/>
+x : execute 실행 : [문서] ./파일명 (실행파일), [디렉토리] cd (진입) <br/>
+
+r = 4 , w = 2 , x = 1 <br/>
+rwxrwxr_x = 7 7 5 <br/>\
+123 => __x_w__wx<br/>
+
+문제 <br/>
+
+user10,user20,user30 생성상태에서 진행<br/>
+
+1. /perm 디렉토리 생성<br/>
+
+2. /perm 소유자계정 user30, 소유그룹 계정 user20 으로 소유권변경<br/>
+
+3. /perm 디렉토리에 user10 은 접근가능,목록보기가능,파일생성불가 허가권부여<br/>
+
+4. /perm 디렉토리에 user20 은 접근가능,목록보기불가,파일생성가능 허가권부여<br/>
+
+5. /perm 디렉토리에 user30 은 접근불가,목록보기불가,파일생성불가 허가권부여<br/>
+
 
 
 
@@ -255,6 +281,11 @@ git reset --soft : commit 시점으로 돌아가서 작업할 수 있다.
 8. git push --set-upstream origin main (푸시 설정)<br/>
 9. git push origin (깃허브 사이트로 푸시) <br/>
 
+이미 만들어져있는 깃허브 깃이랑 연동<br/>
+
+1. 파일에서 git init
+2. git add *
+3. git clone https://github.com/Maze-o/GIT_TEST3.git
 
 
 
