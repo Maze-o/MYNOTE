@@ -223,7 +223,7 @@ user10,user20,user30 생성상태에서 진행<br/>
 
 
 nice -n -20 ping 127.0.0.1
-ps -elf | grep ping
+다른 커맨드창에서 ps -elf | grep ping
 
 
 
@@ -276,15 +276,23 @@ git push origin , git pull origin, git fetch origin
 
 
 이클립스 깃허브 연동
-1. 프로젝트 우클릭 -> team -> share project
-2. use or create repostiory in parent folder of project 체크 (git init)
-3. Git Repositories 선택 (이클립스) -> remotes 우클릭 create remote -> Configure push 선택 create
-4. URI -> 깃허브에 있는 repostiory 주소 복사붙여넣기
-5. User id에는 github 닉네임 or 아이디 입력
-6. passwd에는 github -> profile setting -> Developer settings -> Personal access tokens -> Tokens(classic) -> Generate new token (classic) -> Note 닉네임 설정 후 repo 선택후 Generate token 붙여넣기 Finish
+올리기
+1. 상단 window -> show view -> 
+2. 프로젝트 우클릭 -> team -> share project
+3. use or create repostiory in parent folder of project 체크 (git init)
+4. Git Repositories 선택 (이클립스) -> remotes 우클릭 create remote -> Configure push 선택 create
+5. URI -> 깃허브에 있는 repostiory 주소 복사붙여넣기
+6. User id에는 github 닉네임 or 아이디 입력
+7. passwd에는 github -> profile setting -> Developer settings -> Personal access tokens -> Tokens(classic) -> Generate new token (classic) -> Note 닉네임 설정 후 repo 선택후 Generate token 붙여넣기 Finish
  
+받기
 
+이클립스 file -> Import -> froject from git -> Clone uri
 
+이클립스에서 브랜치 생성 후 깃허브에 커밋
+
+프로젝트 우클릭 -> team -> switch -> new branch -> branch name에 branch 이름 입력
+파일 수정 후 commit 하면 github에 새로운 branch 보임. -> 하지만 이클립스에서는 merge 불가능. 깃허브에서 merge해야함
 
 
 
