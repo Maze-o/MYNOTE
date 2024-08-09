@@ -1,6 +1,6 @@
 # 정보처리산업기사 과정평가형 메모
 
-<h2>1. OSI 7계층 정리 (2024.07.30)</h2>
+<h2>1. OSI 7계층 정리 </h2>
 
 <h4>물리계층</h4>
 - 실제 장치를 전선(케이블,리피터,허브)로 연결해서 디지털 신호(부호)를 (전기 에너지, 통신망)을 통해 전달
@@ -38,7 +38,7 @@
 <h3>문제풀이는 github 참조</h3>
 ---------------------------------
 </div>
-<h2>네트워크 실습 (2024.07.31)</h2>
+<h2>네트워크 실습</h2>
 Routing Protocol - 라우터 2개 이상부터 사용
 1. 정적 Routing (수동으로 넣는방법) - Static(하나의 목적지에 대한 방향)과 
 				Default(지정하지않은 나머지 모든 방향)로 나눠짐
@@ -81,46 +81,17 @@ HTTP
 Hyper Text Transfer Protocol
 
 
-프로젝트 메모
 
-개념(조직화,관계도,그림,무슨 기능을 넣을것인지) -> 논리(탭에 대한 필요한 세부항목) -> 물리(개발환경 구축)
-draw.io
-
-주유소 정보 만들 예정.
-
-기능 - 주유소 위치(지도에서 반경 내 위치), 가격(평균가격, 경유, 휘발유)
--주유소 api, 지도 api 필요
-
--스프링부트, 타임리프, 마이바티스
-
-io.start.spring 사이트를 이용하면 쉽게 프로젝트 템플릿 파일을 얻을 수 있다
-
-빌드구성 - maven or gradle . gradle 픽
-편집툴 - 이클립스
-DBMS - 오라클
-DB Connect - JPA
-View Template - thymeleaf
-배포파일 - BootWar
-배포서버 -
-AWS EC2 - AWS 정식 서버 버젼, 1년 무료후 유료(유료가 비쌈. 몇만원대)
-AWS 라이트세일 - AWS 가상서버 버전, 3달무료 후 한달에 5천원 발생. 사용량 만큼이므로 잠시 정지시켜 두거나, 필요없을시 지워도 됨.
-
-https://blog.naver.com/nissisoft21/222802517122
-
-
-<h2>2024 08 06</h2>		
+<h1>LINUX</h1>		
 시험에 나옴 			
 mysql DB - Database -  Forward Engineer(다이어그램 DB테이블로 바꾸기) , Reverser Engineer(DB테이블 다이어그램으로 바꾸기)		
-
-<h2>2024 08 07</h2>					
+tomcat 설정 - C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib jsp-api , servlet-api 이클립스 web-inf -> bin 밑에 복붙
+					
 리눅스 (Ubuntu)				
 		
 명령어 종류.		
 passwd ifconfig pwd cd ls mkdir touch cp mv rm cat head tail more > vi				
-
-		
-		
-		
+	
 		
   		
 1. repo update		
@@ -251,10 +222,17 @@ user10,user20,user30 생성상태에서 진행<br/>
 5. /perm 디렉토리에 user30 은 접근불가,목록보기불가,파일생성불가 허가권부여<br/>
 
 
+nice -n -20 ping 127.0.0.1
+ps -elf | grep ping
 
 
-<h2>GIT 2024-08-08</h2>			
-		
+
+
+
+<h1>GIT</h1>			
+
+기본 명령어 - 	
+
 cmd - git init : .git 폴더 만들어짐.				
 		
 git status - git 상태 확인		
@@ -263,9 +241,16 @@ git add (t.txt) : stage area에 파일 등록
 		
 git log --oneline : 로그를 한줄로 볼 수 있다.		
 		
-git reset --soft : commit 시점으로 돌아가서 작업할 수 있다.		     
-	  --hard : 
-   	  --mixed : 
+git reset --soft : commit : 취소 , working directory(add) : 있음 , stage area : 있음
+   	  --mixed : commit : 취소, working directory(add) : 있음 , stage area : 없음
+	  --hard : commit : 취소, working directory(add) : 없음 , stage area : 없음
+
+git reflog
+      
+git merge - 충돌이 일어나면 git merge --continue(충돌 해결 후) , git abort(충돌 무시) <br/>
+
+git branch (확인) , git branch [newBranch], git switch/checkout [branch명] <br/>
+
 		
 주의 : 		
 깃허브에서 readme파일을 생성하는순간 branch가 하나 만들어지게돼버림.		
@@ -281,15 +266,23 @@ git reset --soft : commit 시점으로 돌아가서 작업할 수 있다.
 8. git push --set-upstream origin main (푸시 설정)<br/>
 9. git push origin (깃허브 사이트로 푸시) <br/>
 
+
+
 이미 만들어져있는 깃허브 깃이랑 연동<br/>
 
 1. 파일에서 git init
-2. git add *
-3. git clone https://github.com/Maze-o/GIT_TEST3.git
+2. git clone https://github.com/Maze-o/GIT_TEST3.git
+git push origin , git pull origin, git fetch origin
 
 
-
-
+이클립스 깃허브 연동
+1. 프로젝트 우클릭 -> team -> share project
+2. use or create repostiory in parent folder of project 체크 (git init)
+3. Git Repositories 선택 (이클립스) -> remotes 우클릭 create remote -> Configure push 선택 create
+4. URI -> 깃허브에 있는 repostiory 주소 복사붙여넣기
+5. User id에는 github 닉네임 or 아이디 입력
+6. passwd에는 github -> profile setting -> Developer settings -> Personal access tokens -> Tokens(classic) -> Generate new token (classic) -> Note 닉네임 설정 후 repo 선택후 Generate token 붙여넣기 Finish
+ 
 
 
 
