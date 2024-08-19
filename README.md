@@ -322,7 +322,7 @@ html- hyper text markup language 약어로 hypertext(웹 페이지에서 다른 
 
 element - content를 감싸는 태그
 
-<!--
+
 <!DOCTYPE html> : 문서의 유형을 선언, HTML 문서파일
 
 <html lang="ko"></html> : HTML문서의 시작/끝, lang 속성을 이용하여 문서의 기본언어가 한국어임을 명시
@@ -369,10 +369,6 @@ table 열병합 : colspan
 a 태그 target = "_blank" : 새 탭에서 이동
 
 a href javascript:void(0) : href에 아무것도 넣지 않아도 #이 자동으로 들어가서 현재 위치로 이동하기 때문에 나중에 문제가 생길수 있음. 꼭 javascript:void(0) 를 넣어서 방지하기.
-
-
-
-!-->
 
 
 
