@@ -346,18 +346,18 @@ prettier : 코드 자동 정렬
 - 블럭형 태그 : 사용하면 행 전체를 사용 <div>		
 - 라인형 태그 : 한 행 안에 포함되어서 사용되는 태그 <span>		
 		
-EMMET 		
-자식요소 : > 사용 (div>ul>li)		
-형제 : + 사용 (div>ul+ol)		
-상위태그 : ^ 사용 (div>ul>li^p)		
-문자열처리 : {}사용 (div>ul>li*4>a{기본메뉴})		
-반복처리 : * 사용 (div>ul>li*3)		
-인덱스처리: $ 사용 ( div>ul>li*4>a{$.기본메뉴}) : 숫자가 나온다		
-클래스 선택자 : . 사용 (div.items)		
-ID선택자 : # 사용 (div#slider)		
-LAYOUT EMMET : .wapper>header>.top-header+nav^main>section^footer		
-attr 추가 : [] 사용 (div>ol[type="I"])		
-시작 인덱스 번호 지정 : @ 사용 (div>ul>li*4{TEXT_$@5})		
+EMMET 		</br>
+자식요소 : > 사용 (div>ul>li)		 </br>
+형제 : + 사용 (div>ul+ol)		</br>
+상위태그 : ^ 사용 (div>ul>li^p)		</br>
+문자열처리 : {}사용 (div>ul>li*4>a{기본메뉴})		</br>
+반복처리 : * 사용 (div>ul>li*3)		</br>
+인덱스처리: $ 사용 ( div>ul>li*4>a{$.기본메뉴}) : 숫자가 나온다		</br>
+클래스 선택자 : . 사용 (div.items)		</br>
+ID선택자 : # 사용 (div#slider)		</br>
+LAYOUT EMMET : .wapper>header>.top-header+nav^main>section^footer		</br>
+attr 추가 : [] 사용 (div>ol[type="I"])		</br>
+시작 인덱스 번호 지정 : @ 사용 (div>ul>li*4{TEXT_$@5})	1</br>		
 		
 table 태그 안에는 기본적으로 만들지 않아도 tbody 태그가 들어간다. (나중에 js쓸때 주의)		
 div>ul>li>a+ul>li>a : 기본 메뉴구조		
