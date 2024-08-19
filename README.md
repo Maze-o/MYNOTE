@@ -309,66 +309,65 @@ git push origin , git pull origin, git fetch origin
 
 
 
-
-<h1>화면 구현</h1>
+	
+<h1>화면 구현</h1>		
 		
+				
+<h2>HTML</h2>		
 		
-<h2>HTML</h2>
+html- hyper text markup language 약어로 hypertext(웹 페이지에서 다른 페이지로 이동할 수 있도록 하는 것) 기능을 가진		
+문서를 만드는 언어		
+		
+시멘틱 마크업 (head, body, footer)		
+		
+element - content를 감싸는 태그		
+		
+<!DOCTYPE html> : 문서의 유형을 선언, HTML 문서파일		
+		
+<html lang="ko"></html> : HTML문서의 시작/끝, lang 속성을 이용하여 문서의 기본언어가 한국어임을 명시		
+		
+<head></head> : 문서의 메타데이터와 제목등을 포함하는 머리말		
+		
+<meta charset="UTF-8"> : 문서의 문자 인코딩을 UTF-8으로 설정 		
+		
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> - 반응형 웹 디자인을 위한 뷰포트 설정		
+:width=device-width : 뷰포트의 너비를 디바이스의 너비만큼 지정		
+initial-scale=1.0 : 페이지가 처음 로드될때 기본 확대/축소 수준을 지정		
+		
+<body></body> : 문서의 본문, 브라우저에 viewport(웹페이지를 사용자가 보는영역)에 표시되는 내	용		
+		
+auto rename tag : 태그의 시작 또는 끝을 수정하면 자동으로 수정		
+		
+live server : rerode를 수동으로 하지 않아도 자동으로 반영		
+		
+prettier : 코드 자동 정렬		
+		
+태그는 라인형 태그와 블럭형 태그로 나눠짐 		
+- 블럭형 태그 : 사용하면 행 전체를 사용 <div>		
+- 라인형 태그 : 한 행 안에 포함되어서 사용되는 태그 <span>		
+		
+EMMET 		
+자식요소 : > 사용 (div>ul>li)		
+형제 : + 사용 (div>ul+ol)		
+상위태그 : ^ 사용 (div>ul>li^p)		
+문자열처리 : {}사용 (div>ul>li*4>a{기본메뉴})		
+반복처리 : * 사용 (div>ul>li*3)		
+인덱스처리: $ 사용 ( div>ul>li*4>a{$.기본메뉴}) : 숫자가 나온다		
+클래스 선택자 : . 사용 (div.items)		
+ID선택자 : # 사용 (div#slider)		
+LAYOUT EMMET : .wapper>header>.top-header+nav^main>section^footer		
+attr 추가 : [] 사용 (div>ol[type="I"])		
+시작 인덱스 번호 지정 : @ 사용 (div>ul>li*4{TEXT_$@5})		
+		
+table 태그 안에는 기본적으로 만들지 않아도 tbody 태그가 들어간다. (나중에 js쓸때 주의)		
+div>ul>li>a+ul>li>a : 기본 메뉴구조		
 
-html- hyper text markup language 약어로 hypertext(웹 페이지에서 다른 페이지로 이동할 수 있도록 하는 것) 기능을 가진
-문서를 만드는 언어
-
-시멘틱 마크업 (head, body, footer)
-
-element - content를 감싸는 태그
-
-
-<!DOCTYPE html> : 문서의 유형을 선언, HTML 문서파일
-
-<html lang="ko"></html> : HTML문서의 시작/끝, lang 속성을 이용하여 문서의 기본언어가 한국어임을 명시
-
-<head></head> : 문서의 메타데이터와 제목등을 포함하는 머리말
-
-<meta charset="UTF-8"> : 문서의 문자 인코딩을 UTF-8으로 설정 
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> - 반응형 웹 디자인을 위한 뷰포트 설정
-:width=device-width : 뷰포트의 너비를 디바이스의 너비만큼 지정
-initial-scale=1.0 : 페이지가 처음 로드될때 기본 확대/축소 수준을 지정
-
-<body></body> : 문서의 본문, 브라우저에 viewport(웹페이지를 사용자가 보는영역)에 표시되는 내용
-
-auto rename tag : 태그의 시작 또는 끝을 수정하면 자동으로 수정
-
-live server : rerode를 수동으로 하지 않아도 자동으로 반영
-
-prettier : 코드 자동 정렬
-
-태그는 라인형 태그와 블럭형 태그로 나눠짐 
-- 블럭형 태그 : 사용하면 행 전체를 사용 <div>
-- 라인형 태그 : 한 행 안에 포함되어서 사용되는 태그 <span>
-
-EMMET 
-자식요소 : > 사용 (div>ul>li)
-형제 : + 사용 (div>ul+ol)
-상위태그 : ^ 사용 (div>ul>li^p)
-문자열처리 : {}사용 (div>ul>li*4>a{기본메뉴})
-반복처리 : * 사용 (div>ul>li*3)
-인덱스처리: $ 사용 ( div>ul>li*4>a{$.기본메뉴}) : 숫자가 나온다
-클래스 선택자 : . 사용 (div.items)
-ID선택자 : # 사용 (div#slider)
-LAYOUT EMMET : .wapper>header>.top-header+nav^main>section^footer
-attr 추가 : [] 사용 (div>ol[type="I"])
-시작 인덱스 번호 지정 : @ 사용 (div>ul>li*4{TEXT_$@5})
-
-table 태그 안에는 기본적으로 만들지 않아도 tbody 태그가 들어간다. (나중에 js쓸때 주의)
-div>ul>li>a+ul>li>a : 기본 메뉴구조
-
-table 행병합 : rowspan
-table 열병합 : colspan
-
-a 태그 target = "_blank" : 새 탭에서 이동
-
-a href javascript:void(0) : href에 아무것도 넣지 않아도 #이 자동으로 들어가서 현재 위치로 이동하기 때문에 나중에 문제가 생길수 있음. 꼭 javascript:void(0) 를 넣어서 방지하기.
+table 행병합 : rowspan		
+table 열병합 : colspan		
+		
+a 태그 target = "_blank" : 새 탭에서 이동		
+		
+a href javascript:void(0) : href에 아무것도 넣지 않아도 #이 자동으로 들어가서 현재 위치로 이동하기 때문에 나중에 문제가 생길수 있음. 꼭 javascript:void(0) 를 넣어서 방지하기.		
 
 
 
