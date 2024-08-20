@@ -109,10 +109,30 @@ $ : 문자열의 끝
 ^(?=.*[A-Za-z]) : 전방탐색(?=), 임의의 문자가 0개 이상 존재할 경우(.*) 영문 대문자/ 소문자 이상 하나이상 포함하는지 여부 ([A-Za-z])
 
 
+<h2>CSS</h2>
 
+적용법 - 1. style 태그를 만들어서 적용
+	2. 단일 태그(inline) 안에 style 속성을 넣어서 적용 (유지보수가 힘들어서 권장하지않음)
+ 	3. 외부 파일으로 link
+  	(충돌이 일어나면 가장 나중에 있는 style을 적용)
+  	강제 적용 :  !important 속성 (남발 x 나중에 반응형 쓸때 모바일 적용을 위해 사용 할수도 있다)
 
+display: block; - 블럭형 태그로 지정
+display: line; 라인형 태그로 지정
 
+margin : 요소간의 간격을 지정
+border : 내용 사이의 간격을 지정할때 사용
+padding : 테두리와 border 사이의 간격
 
+block tag = 한 행전체를 차지하는 태그
+-width : o , height : o
+-margin : 0, padding : 0
+line tag = 한 행안에 포함되어지는 태그
+-width : o , height : o
+-margin : left, right, padding : o
+inline-block tag = 한 행안에 포함되어지는 태그  (line형안에 포함되어있다)
+-width : o , height : o
+-margin : 0, padding : 0
 
 
 
