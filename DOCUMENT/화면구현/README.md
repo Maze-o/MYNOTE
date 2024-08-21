@@ -109,17 +109,36 @@ $ : 문자열의 끝</br>
 ^(?=.*[A-Za-z]) : 전방탐색(?=), 임의의 문자가 0개 이상 존재할 경우(.*) 영문 대문자/ 소문자 이상 하나이상 포함하는지 여부 ([A-Za-z])</br>
 
 
-<h2>CSS</h2>
+<h1>CSS</h1>
 
 적용법 - 1. style 태그를 만들어서 적용</br>
 	2. 단일 태그(inline) 안에 style 속성을 넣어서 적용 (유지보수가 힘들어서 권장하지않음)</br>
  	3. 외부 파일으로 link</br>
   	(충돌이 일어나면 가장 나중에 있는 style을 적용)</br>
   	강제 적용 :  !important 속성 (남발 x 나중에 반응형 쓸때 모바일 적용을 위해 사용 할수도 있다)</br>
+   
+<hr/>
 
-display: block; - 블럭형 태그로 지정</br>
-display: line; 라인형 태그로 지정</br>
+<h3>block, line 태그</h3>		
+		
+display: block; // 블럭형 태그로 지정</br>
+display: line; // 라인형 태그로 지정</br>
+		
+block tag // 한 행전체를 차지하는 태그</br>
+-width : o , height : o</br>
+-margin : 0, padding : 0</br>
+		
+line tag // 한 행안에 포함되어지는 태그</br>
+-width : o , height : o</br>
+-margin : left, right만 o, padding :o</br>
+		
+inline-block tag // 한 행안에 포함되어지는 태그  (line형안에 포함되어있다)</br>
+-width : o , height : o</br>
+-margin : 0, padding : 0</br>
+		
+<hr/>
 
+<h3>width, height</h3>
 width : auto; //너비 (default값 : auto, 전체너비 사용) </br>
 	width의 auto : 브라우저의 너비만큼 쓰려고 하는 성질이 있다</br>
 height : auto; //높이 (default값 : auto, 최소한의 높이 사용)</br>
@@ -130,12 +149,15 @@ max-width : 최대 너비</br>
 min-height : 최소 높이</br>
 max-height : 최대 높이 height가 auto일시 의미가 없어짐 (작아질려고 하기 때문에)</br>
 
-자식간의 수평 가운데 배치법
+<hr/>
+
+<h3>자식간의 수평 가운데 배치법</h3>
 1. 부모요소에 display: flex; , justify-content: center; align-items: center;
 2. 부모요소에 position: relative; 자식요소에 left, right, top, bottom 을 0으로 설정 , margin: auto;
 
+<hr/>
 
-<h4>margin , border, padding</h4>
+<h3>margin , border, padding</h3>
 margin = 요소간의 간격을 지정 </br>
 
 margin: 20px 40px // 20px : top bottom // 40px : left,right으로 적용		
@@ -157,18 +179,8 @@ border-radius: 15px 35px 50px 100px; (시계방향으로 깎음)
 padding = 테두리와 border 사이의 간격</br>
 
 
-
-block tag = 한 행전체를 차지하는 태그</br>
--width : o , height : o</br>
--margin : 0, padding : 0</br>
-line tag = 한 행안에 포함되어지는 태그</br>
--width : o , height : o</br>
--margin : left, right만 o, padding :o</br>
-inline-block tag = 한 행안에 포함되어지는 태그  (line형안에 포함되어있다)</br>
--width : o , height : o</br>
--margin : 0, padding : 0</br>
-
 <hr/>
+
 <h3>단위</h3>
 px : 고정크기 </br>
 % : 가변크기 // 상위태그를 기준으로 %만큼 크기 지정</br>
