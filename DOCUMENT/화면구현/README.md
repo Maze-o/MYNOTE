@@ -47,120 +47,120 @@ LAYOUT EMMET : .wapper>header>.top-header+nav^main>section^footer		</br>
 attr 추가 : [] 사용 (div>ol[type="I"])		</br>
 시작 인덱스 번호 지정 : @ 사용 (div>ul>li*4{TEXT_$@5})	1</br>		
 		
-table 태그 안에는 기본적으로 만들지 않아도 tbody 태그가 들어간다. (나중에 js쓸때 주의)		
-div>ul>li>a+ul>li>a : 기본 메뉴구조		
+table 태그 안에는 기본적으로 만들지 않아도 tbody 태그가 들어간다. (나중에 js쓸때 주의)	</br>	
+div>ul>li>a+ul>li>a : 기본 메뉴구조		</br>
 
-table 행병합 : rowspan		
-table 열병합 : colspan		
+table 행병합 : rowspan		</br>
+table 열병합 : colspan		</br>
 		
-a 태그 target = "_blank" : 새 탭에서 이동		
+a 태그 target = "_blank" : 새 탭에서 이동		</br>
 		
-a href javascript:void(0) : href에 아무것도 넣지 않아도 #이 자동으로 들어가서 현재 위치로 이동하기 때문에 나중에 문제가 생길수 있음. 꼭 javascript:void(0) 를 넣어서 방지하기.		
+a href javascript:void(0) : href에 아무것도 넣지 않아도 #이 자동으로 들어가서 현재 위치로 이동하기 때문에 나중에 문제가 생길수 있음. 꼭 javascript:void(0) 를 넣어서 방지하기.</br>		
 
 
 <h3>video</h3> 
-<video> <source src ="img" type="video/mp4">
+(video) (source src ="img" type="video/mp4")</br>
 
-type 로 비디오냐 문서냐 이미지냐 구분
+type 로 비디오냐 문서냐 이미지냐 구분</br>
 
-type = "video/mp4" 파일명 구분
+type = "video/mp4" 파일명 구분</br>
 
 <h4> video 태그 속성 </h4> 
-controls autoplay - 비디오 자동재생
-muted - 음소거가 아니면 자동재생이 안됨 (js api를 써야함)
-loop - 무한재생
+controls autoplay - 비디오 자동재생</br>
+muted - 음소거가 아니면 자동재생이 안됨 (js api를 써야함)</br>
+loop - 무한재생</br>
 
 <h4>form</h4>
-form : 사용자로부터 특정정보를 받아 서버로 전달하는데 사용되는 태그
+form : 사용자로부터 특정정보를 받아 서버로 전달하는데 사용되는 태그</br>
 
-action attribute : 전달받는 서버 API() (or Endpoint)
-mehod attribute : 서버로 요청 방식 
-  -GET : 사용자 요청 정보를 QUERY STRING으로 전달(DEFAULT)
-  -POST : 사용자 요청 정보를 REQUEST BODY에 담아 전달(OPTIONAL)
-  -PUT 
-  -PATCH
-  -DELETE
+action attribute : 전달받는 서버 API() (or Endpoint)</br>
+mehod attribute : 서버로 요청 방식 </br>
+  -GET : 사용자 요청 정보를 QUERY STRING으로 전달(DEFAULT)</br>
+  -POST : 사용자 요청 정보를 REQUEST BODY에 담아 전달(OPTIONAL)</br>
+  -PUT </br>
+  -PATCH</br>
+  -DELETE</br>
 
 <h5>input</h5>
-type : email = 이메일 타입 (@넣지않으면 유효성에서 탈락)
-       password = 비밀번호 타입 (별으로 표시됨) 
-       radio = 택1 할때 선택 (name을 동일하게 하지 않으면 둘다 선택이 가능해짐)
-       tel = 전화번호 입력 시 사용 pattern 속성 사용 가능 (pattern="[0]{1}[1]{1}[0]{1} - 010만 가능)
-       checkbox = 여러개 선택 가능 (동일한 파라미터에 여러 벨류값들을 전달할 때 사용)
-       file = 파일 업로드 할 때 사용 (multiple 사용 시 여러 파일 선택가능)
-       submit = button과 동일 form action 실행 
-       date = 날짜 
-       select = 여러목록에서 하나를 선택할때 사용 <select name=""> <option value="">대구</option> (selected 넣으면 디폴트값으로 설정)
-       required = 입력 안하면 안넘어감
-       readonly = 입력 불가 (값은 전달 됨) - value로 전달
-       disabled = 입력 불가 (값이 전달 안됨)
-       oninvaild : 유효하지 않은 이벤트가 들어왔을 때
-       
-^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$ 해석
-^ : 문자열의 시작
-$ : 문자열의 끝
-()  :패턴을 구분하는 부분식
-?= : 전방탐색
-. : 모든 문자 일치
-* : 앞의 문자나 부분식이 0개 이상 탐욕적으로 찾기
-[A-za-z] : 영어 알파벳이 하나이상 포함되어야 한다(대문자, 소문자)
-\d : 모든 숫자와 일치, [0~9]와 동일 
-
-^(?=.*[A-Za-z]) : 전방탐색(?=), 임의의 문자가 0개 이상 존재할 경우(.*) 영문 대문자/ 소문자 이상 하나이상 포함하는지 여부 ([A-Za-z])
+type : email = 이메일 타입 (@넣지않으면 유효성에서 탈락)</br>
+       password = 비밀번호 타입 (별으로 표시됨) </br>
+       radio = 택1 할때 선택 (name을 동일하게 하지 않으면 둘다 선택이 가능해짐)</br>
+       tel = 전화번호 입력 시 사용 pattern 속성 사용 가능 (pattern="[0]{1}[1]{1}[0]{1} - 010만 가능)</br>
+       checkbox = 여러개 선택 가능 (동일한 파라미터에 여러 벨류값들을 전달할 때 사용)</br>
+       file = 파일 업로드 할 때 사용 (multiple 사용 시 여러 파일 선택가능)</br>
+       submit = button과 동일 form action 실행 </br>
+       date = 날짜 </br>
+       select = 여러목록에서 하나를 선택할때 사용 (select name="") (option value="")대구(/option) (selected 넣으면 디폴트값으로 설정)</br>
+       required = 입력 안하면 안넘어감</br>
+       readonly = 입력 불가 (값은 전달 됨) - value로 전달</br>
+       disabled = 입력 불가 (값이 전달 안됨)</br>
+       oninvaild : 유효하지 않은 이벤트가 들어왔을 때</br>
+       </br>
+(해석^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$ 해석)</br>
+^ : 문자열의 시작</br>
+$ : 문자열의 끝</br>
+()  :패턴을 구분하는 부분식</br>
+?= : 전방탐색</br>
+. : 모든 문자 일치</br>
+* : 앞의 문자나 부분식이 0개 이상 탐욕적으로 찾기</br>
+[A-za-z] : 영어 알파벳이 하나이상 포함되어야 한다(대문자, 소문자)</br>
+\d : 모든 숫자와 일치, [0~9]와 동일 </br>
+</br>
+^(?=.*[A-Za-z]) : 전방탐색(?=), 임의의 문자가 0개 이상 존재할 경우(.*) 영문 대문자/ 소문자 이상 하나이상 포함하는지 여부 ([A-Za-z])</br>
 
 
 <h2>CSS</h2>
 
-적용법 - 1. style 태그를 만들어서 적용
-	2. 단일 태그(inline) 안에 style 속성을 넣어서 적용 (유지보수가 힘들어서 권장하지않음)
- 	3. 외부 파일으로 link
-  	(충돌이 일어나면 가장 나중에 있는 style을 적용)
-  	강제 적용 :  !important 속성 (남발 x 나중에 반응형 쓸때 모바일 적용을 위해 사용 할수도 있다)
+적용법 - 1. style 태그를 만들어서 적용</br>
+	2. 단일 태그(inline) 안에 style 속성을 넣어서 적용 (유지보수가 힘들어서 권장하지않음)</br>
+ 	3. 외부 파일으로 link</br>
+  	(충돌이 일어나면 가장 나중에 있는 style을 적용)</br>
+  	강제 적용 :  !important 속성 (남발 x 나중에 반응형 쓸때 모바일 적용을 위해 사용 할수도 있다)</br>
 
-display: block; - 블럭형 태그로 지정
-display: line; 라인형 태그로 지정
+display: block; - 블럭형 태그로 지정</br>
+display: line; 라인형 태그로 지정</br>
 
-width : auto; //너비 (default값 : auto, 전체너비 사용) 
-	width의 auto : 브라우저의 너비만큼 쓰려고 하는 성질이 있다
-height : auto; //높이 (default값 : auto, 최소한의 높이 사용)
-	height의 auto : 최소한의 높이를 가지려고 하는 성질이 있다
+width : auto; //너비 (default값 : auto, 전체너비 사용) </br>
+	width의 auto : 브라우저의 너비만큼 쓰려고 하는 성질이 있다</br>
+height : auto; //높이 (default값 : auto, 최소한의 높이 사용)</br>
+	height의 auto : 최소한의 높이를 가지려고 하는 성질이 있다</br>
 
-min-width : 최소 너비 
-max-width : 최대 너비
-min-height : 최소 높이
-max-height : 최대 높이 height가 auto일시 의미가 없어짐 (작아질려고 하기 때문에)
+min-width : 최소 너비 </br>
+max-width : 최대 너비</br>
+min-height : 최소 높이</br>
+max-height : 최대 높이 height가 auto일시 의미가 없어짐 (작아질려고 하기 때문에)</br>
 
-margin : 요소간의 간격을 지정
-border : 내용 사이의 간격을 지정할때 사용
-padding : 테두리와 border 사이의 간격
+margin : 요소간의 간격을 지정</br>
+border : 내용 사이의 간격을 지정할때 사용</br>
+padding : 테두리와 border 사이의 간격</br>
 
-block tag = 한 행전체를 차지하는 태그
--width : o , height : o
--margin : 0, padding : 0
-line tag = 한 행안에 포함되어지는 태그
--width : o , height : o
--margin : left, right만 o, padding :o
-inline-block tag = 한 행안에 포함되어지는 태그  (line형안에 포함되어있다)
--width : o , height : o
--margin : 0, padding : 0
+block tag = 한 행전체를 차지하는 태그</br>
+-width : o , height : o</br>
+-margin : 0, padding : 0</br>
+line tag = 한 행안에 포함되어지는 태그</br>
+-width : o , height : o</br>
+-margin : left, right만 o, padding :o</br>
+inline-block tag = 한 행안에 포함되어지는 태그  (line형안에 포함되어있다)</br>
+-width : o , height : o</br>
+-margin : 0, padding : 0</br>
 
-단위 -
-px : 고정크기 
-% : 가변크기 // 상위태그를 기준으로 %만큼 크기 지정
-vw, vh : 가변크기 // viewport(브라우저에 표시되는 영역)를 기준으로 백분율만큼 크기지정 
-rem : 상대적 크기 // 루트(html)글자크기를 기준으로 배수만큼 크기 지정
-em : 상대적 크기 // 부모글자크기를 기준으로 배수형태의 크기 지정
+단위 -</br>
+px : 고정크기 </br>
+% : 가변크기 // 상위태그를 기준으로 %만큼 크기 지정</br>
+vw, vh : 가변크기 // viewport(브라우저에 표시되는 영역)를 기준으로 백분율만큼 크기지정 </br>
+rem : 상대적 크기 // 루트(html)글자크기를 기준으로 배수만큼 크기 지정</br>
+em : 상대적 크기 // 부모글자크기를 기준으로 배수형태의 크기 지정</br>
 
-clamp - 반응형 글자크기 조절 옵션
-font-size: clamp(기준값, 최소값, 최대값)
+clamp - 반응형 글자크기 조절 옵션</br>
+font-size: clamp(기준값, 최소값, 최대값)</br>
 
-font
-letter-spacing - 글자 사이에 간격 지정
-word-spacing - 단어 사이에 간격 지정
+font</br>
+letter-spacing - 글자 사이에 간격 지정</br>
+word-spacing - 단어 사이에 간격 지정</br>
 
 
-텍스트 수평정렬 : text-align: center;
-텍스트 수직정렬 : line-height:200px; (px은 height랑 같게 지정)
+텍스트 수평정렬 : text-align: center;</br>
+텍스트 수직정렬 : line-height:200px; (px은 height랑 같게 지정)</br>
 
 
 
