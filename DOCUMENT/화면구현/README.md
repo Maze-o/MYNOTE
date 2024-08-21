@@ -120,6 +120,16 @@ $ : 문자열의 끝
 display: block; - 블럭형 태그로 지정
 display: line; 라인형 태그로 지정
 
+width : auto; //너비 (default값 : auto, 전체너비 사용) 
+	width의 auto : 브라우저의 너비만큼 쓰려고 하는 성질이 있다
+height : auto; //높이 (default값 : auto, 최소한의 높이 사용)
+	height의 auto : 최소한의 높이를 가지려고 하는 성질이 있다
+
+min-width : 최소 너비 
+max-width : 최대 너비
+min-height : 최소 높이
+max-height : 최대 높이 height가 auto일시 의미가 없어짐 (작아질려고 하기 때문에)
+
 margin : 요소간의 간격을 지정
 border : 내용 사이의 간격을 지정할때 사용
 padding : 테두리와 border 사이의 간격
@@ -129,10 +139,31 @@ block tag = 한 행전체를 차지하는 태그
 -margin : 0, padding : 0
 line tag = 한 행안에 포함되어지는 태그
 -width : o , height : o
--margin : left, right, padding : o
+-margin : left, right만 o, padding :o
 inline-block tag = 한 행안에 포함되어지는 태그  (line형안에 포함되어있다)
 -width : o , height : o
 -margin : 0, padding : 0
+
+단위 -
+px : 고정크기 
+% : 가변크기 // 상위태그를 기준으로 %만큼 크기 지정
+vw, vh : 가변크기 // viewport(브라우저에 표시되는 영역)를 기준으로 백분율만큼 크기지정 
+rem : 상대적 크기 // 루트(html)글자크기를 기준으로 배수만큼 크기 지정
+em : 상대적 크기 // 부모글자크기를 기준으로 배수형태의 크기 지정
+
+clamp - 반응형 글자크기 조절 옵션
+font-size: clamp(기준값, 최소값, 최대값)
+
+font
+letter-spacing - 글자 사이에 간격 지정
+word-spacing - 단어 사이에 간격 지정
+
+
+텍스트 수평정렬 : text-align: center;
+텍스트 수직정렬 : line-height:200px; (px은 height랑 같게 지정)
+
+
+
 
 
 
