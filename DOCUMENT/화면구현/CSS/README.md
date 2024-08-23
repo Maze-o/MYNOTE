@@ -242,13 +242,27 @@ flex방향
 
 flex-wrap: (display flex가 적용된 부모의 width보다 자식의 width가 더 클 경우 줄바꿈을 할지말지 여부)
 - flex-wrap: wrap(width적용), nowrap(기본값) 
+```
 
+<hr/>
 
-
-
-
+<h3>animation</h3>
 
 ```
+transition: // 크기,위치 변화가 있을 때 지연값 설정 (div:hover {width:800px;} 후 사용)
+- focus옵션에 넣으면 클릭했을 때만 설정, 요소 자체에 넣으면 클릭, 클릭해제 둘다 발생
+
+input[type='text']:focus{} // 인풋 area를 클릭했을때의 설정
+outline:none; // 인풋박스가 표시되지않음
+background:linear-gradient(방향, 컬러) // 포커스되었을때 설정한 방향으로 설정한 컬러가 생김 (transition을 따른다)
+
+transform: translate(x축, y축) // 으로 위치 이동
+           scale(x축, y축) // 만큼 배수로 크기 조정
+	   rotate(270deg) // 270도 회전
+	   skew(20deg) // 각도만큼 왜곡시키기
+	   
+```
+
 
 
 
