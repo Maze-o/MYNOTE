@@ -228,15 +228,20 @@ flex
 - justify-content: center, right, left, apace-between, space-evenly, space-around
 
 수직배치형태 (컨텐츠의 크기만큼만 부여 (height를 지정해줘야함))
-- align-items: center, end, start, stretch, baseline
+- align-items: center, end, start, stretch, baseline // 상위태그에서 사용
+
+- align-self: stretch, flex-end, flex-start //자식태그에서 사용
+flex-grow: //브라우저의 크키에 맞게 비율을 지정
+flex-shrink: // 줄어드는 비율 
+flex-basis: // 기본크기지정 (shrink를 0으로 잡았을 때 지정해줌)
+flex: 1 1 2 // 첫번째는 grow, 두번째는 shrink, 세번째는 basis가 됨
+
 
 flex방향
 - flex-direciton: row(기본값), row-reverse, column, column-reverse
 
 flex-wrap: (display flex가 적용된 부모의 width보다 자식의 width가 더 클 경우 줄바꿈을 할지말지 여부)
 - flex-wrap: wrap(width적용), nowrap(기본값) 
-
-
 
 
 
