@@ -114,6 +114,7 @@ word-spacing - 단어 사이에 간격 지정
 
 ```
 overflow - 부모태그의 크기보다 자식태그가 커지면 생기는 현상
+overflow:hedden // width가 자식이 부모보다 더 커서 다 못담으면 잘라버림
 ```
 
 <hr>
@@ -241,7 +242,9 @@ flex방향
 - flex-direciton: row(기본값), row-reverse, column, column-reverse
 
 flex-wrap: (display flex가 적용된 부모의 width보다 자식의 width가 더 클 경우 줄바꿈을 할지말지 여부)
-- flex-wrap: wrap(width적용), nowrap(기본값) 
+- flex-wrap: wrap(width적용), nowrap(기본값)
+
+object-fit: cover; // 사진 크기 풀으로 채우기
 ```
 
 <hr/>
@@ -260,7 +263,20 @@ transform: translate(x축, y축) // 으로 위치 이동
            scale(x축, y축) // 만큼 배수로 크기 조정
 	   rotate(270deg) // 270도 회전
 	   skew(20deg) // 각도만큼 왜곡시키기
-	   
+	   perspective(30px) // 시야의 위치 (30px 앞에서 본다 px이 줄어들수록 가까이서 보는 시점)
+transform-style: preserve-3d; // 3D효과로 변경
+backface-visibility: hidden; // 뒷면으로 넘어가는 시점에서 숨겨버린다
+
+@keyframes // 
+- from{} // 가려는 방향
+- to{} // 목적지
+
+animation-name: moving1 //keyfames 이름 선택
+animation-duration: 2s // 몇초동안 (transition이랑 같음)
+animation-iteration-count: //몇번 반복할건지 (infinite : 무한)
+animation-direction: alternate // 왕복
+animation-timing-function: // 가는 속도
+
 ```
 
 
