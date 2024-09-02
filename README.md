@@ -33,6 +33,7 @@
 |----------|---|
 |HTML|[바로가기](https://github.com/Maze-o/MYNOTE/tree/main/DOCUMENT/%ED%99%94%EB%A9%B4%EA%B5%AC%ED%98%84/HTML)|
 |CSS|[바로가기](https://github.com/Maze-o/MYNOTE/tree/main/DOCUMENT/%ED%99%94%EB%A9%B4%EA%B5%AC%ED%98%84/CSS)|
+|JS|[바로가기](https://github.com/Maze-o/MYNOTE/tree/main/DOCUMENT/%ED%99%94%EB%A9%B4%EA%B5%AC%ED%98%84/JS)|
 
 
 
