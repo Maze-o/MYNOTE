@@ -243,16 +243,89 @@ Callback : 콜백함수에 인자로 로직이 담긴 함수를(함수주소)를
 
 ```
 
+<hr>
+
 <h4>이벤트처리</h4>
 
 ```
-클릭이벤트
-const d1Tg = document.getElementById('d1') //아이디 찾기
 
-d1Tg.addEventLister('click'. function () { }) // 클릭에 대한 이벤트
-d1Tg.innerHTML=''; // html 코드 화면에 출력하기
+마우스 클릭이벤트 -
+1. const d1Tg = document.getElementById('d1') // 아이디 찾기
+2. d1Tg.addEventLister('click'. function () { }) // 클릭에 대한 이벤트
+3. d1Tg.innerHTML=''; // html 코드 화면에 출력하기
+
+
+키보드 이벤트 -
+1. KEYUP - 키보드가 올라올 때 (keycode값은 무조건 대문자)
+2. KEYDOWN - 키보드의 특정 키가 내려갈 때 (keycode값은 무조건 대문자)
+3. KEYPRESS - 키보드를 계속 누를 때 (keycode 대소문자 구별)
+4. style : 이미 만들어진 태그에는 style으로 접근해서 스타일링이 가능
+
+
+체크박스 -
+
+onchange :
+1. event.target.checked (체크가 됐다면 true, 아니면 false 반환)
+2. .setAttribute : 태그 안에 속성을 넣을 수 있음 ('style', 'padding:10px;')
+
+
+스크롤 -
+
+scroll 
+1. window.scrollX : 문서의 수평 스크롤 위치, 뷰포트의 가장 왼쪽 부분의 가로축의 위치를 기준으로 함
+2. window.scrollY : 문서의 수직 스크롤 위치, 뷰포트의 가장 위쪽 부분의 세로축의 위치를 기준으로 함
+3. document.documentElement.scrollHeight : 문서 뷰포트의 전체 height값
+4. document.documentElement.scrollTop : window.scrollY랑 같음
+
+헤더상단고정 -
+scroll이벤트 추가 후
+if 스크롤이 50보다 작아지면 (scroll <= 50)
+이외의 경우에 (else)
+헤더에 클래스를 추가 (header.classList.add('fixed')
+css 에 class 포지션 fixed 잡기
+
+사이즈조정 -
+resize이벤트 추가 후
+
+1. window.addEventListener 
+2. window.innerWidth :  브라우저 윈도우 두께를 제외한 실질적 가로 너비
+3. window.outerWidth : 브라우저 윈도우 두께를 포함한 전체 가로 너비
+
+if (window.innerWidth <= 400) // 만약 브라우저의 innerwidth가 400보다 작다면
+ballElement.style.width="50px"
+ballElement.style.height="50px" 으로 스타일 바꾸기
+
+
 ```
 
+<hr>
+
+<h3>NODE CRUD</h3>
+
+```
+id : 보통 유일한 값으로 사용
+class : 그룹 단위로 사용
+name : 서버로 전달 하기위해 사용
+
+노드검색 -
+1. get.ElementById : Id 한 개만 들고옴 (들어오는값이 ID밖에없어서 #생략가능)
+2. get.Elements (s는 여러개기 때문에 배열으로 들고 옴)
+const liEls = document.getElementsByTagName('li') : li의 모든 태그를 가져옴 //배열형태이기 때문에 스타일링 불가
+Array.from(liEls).forEach(function (item) { //유사배열 형태이기 때문에 Array.from사용 해서 배열로 만들어서 처리
+        item.style.fontSize="2rem";
+}
+
+3. document.getElementsByName : name 값 가져오기
+
+4. document.queryselector : 어떤 선택자든 선택 가능 (하나만) #id, .class, input 태그 등등 // 여러개가 검색되면 가장 앞에있는 하나만 가져온다
+5. document.querySelectorAll : 어떤 선택자든 선택 가능 (전부) // 배열 형태로 가져와짐 (forEach사용가능)
+
+폼검색 -
+1. document.forms (모든 폼 가져옴) // 유사배열이라 forEach사용불가
+2. document.(name) // 태그의 name으로 개별 접근 가능
+
+
+```
 
 
 
