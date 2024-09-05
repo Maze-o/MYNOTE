@@ -324,11 +324,41 @@ Array.from(liEls).forEach(function (item) { //유사배열 형태이기 때문�
 1. document.forms (모든 폼 가져옴) // 유사배열이라 forEach사용불가
 2. document.(name) // 태그의 name으로 개별 접근 가능
 
+.setAttribute('draggable', true) // 드래그 가능해지게 함
+
+newDiv.addEventListener('dragover', function (e) { 
+       console.log('dragover!!', e.target)
+       e.preventDefault(); //해주지않으면 drop이 안됨
+})
 
 ```
 
+<hr>
 
+<h3>동기 / 비동기</h3>
+동기 : 미리 약속된 규칙을 근거로 동작하는 방식 //서버에서 응답이 돌아오기 전까지 아무것도 못함 (한 페이지 전체를 요청)
+비동기 : 미리 약속된 규칙대로 동작하지 않고 특정한 방식으로 동작하는 방식 // 특정 영역에서 구분적으로 요청을 함 (부분적으로 요청)
 
+```
+자바스크립트에서의 동기 : 차례차례 순서대로 코드를 읽음 (싱글 스레드 방식)
+자바스크립트에서의 비동기 : 작업하기 위한 공간을 따로 만들어서 동작 (스레드 분할) ex) for문을 100번 돌리는 동안 for문에서 멈춰있는게 아니라 다른 공간으로 빼서 처리하고 바로 밑으로 내려감
+// 자바스크립트는 스레드를 나누는 흉내만 냄 
+
+setTimeout : 예약함수 (일정시간 이후 특정작업 수행 - 비동기 처리 함수) // 한번만 수행
+setTimeout(function (파라미터), {처리 로직}, 시간)
+clearTimeout : 예약을 취소
+
+Interval : 취소하기 전까지 계속 반복됨
+setInterval(function (파라미터) {처리로직}, 시간) // 계속 동작하게 만듬
+claerInterval(id값) // setinterval함수를 ID안에 대입 후 id값으로 멈춤
+
+Promise() : 비동기 요청 시 예외처리가 포함되어있는 객체
+then() : 요청 성공 시 값 받기
+catch() : 실패시 값 받기
+
+async 로 비동기 특정 함수를 묶어서
+await 로 우선순위를 지정할 수 있음 
+```
 
 
 
