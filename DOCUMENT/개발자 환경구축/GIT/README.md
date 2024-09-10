@@ -63,7 +63,8 @@ git push origin , git pull origin, git fetch origin
 4. Git Repositories 선택 (이클립스) -> remotes 우클릭 create remote -> Configure push 선택 create
 5. URI -> 깃허브에 있는 repostiory 주소 복사붙여넣기
 6. User id에는 github 닉네임 or 아이디 입력
-7. passwd에는 github -> profile setting -> Developer settings -> Personal access tokens -> Tokens(classic) -> Generate new token (classic) -> Note 닉네임 설정 후 repo 선택후 Generate token 붙여넣기 Finish
+7. passwd에는 github -> profile setting -> Developer settings -> Personal access tokens -> Tokens(classic) -> Generate new token (classic) -> Note 닉네임 설정 후 repo 선택후 Generate token 붙여넣기 Finish // Repo 체크 하지 않으면 안된다!!!!!!!!!!!!!!!!!!!!
+
  
 받기
 
