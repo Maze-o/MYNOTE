@@ -1,0 +1,150 @@
+/* 마이페이지 */
+.mypage-wrapper {
+    width:100%;
+    margin: 0 auto;
+    height: 1600px;
+    margin: 150px 0;
+}
+
+.mypage-header {
+    width: 100%;
+    height: 500px;
+    border: 1px solid;
+    display:flex;
+    background-color: #EEEDED;
+    
+}
+
+.mypage-header-left { 
+    width:50%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid;
+}
+
+.mypage-header-left> * {
+    /* padding: 2.604vw; */
+}
+
+.mypage-left-profile{
+    height: 15.625vw;
+    width: 300px;
+}
+
+.mypage-left-profile>img {
+    object-fit: contain;
+    width:100%;
+    height:100%;  
+}
+
+.mypage-left-ul>li {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px;
+    white-space:nowrap;
+
+}
+
+
+.mypage-right {
+  
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    position: relative;
+    flex-direction: column;
+}
+
+.mypage-right-top {
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    font-weight: 900;
+    font-size: 1.4rem;
+}   
+
+.mypage-right-box {
+    background-color: white;
+    /* height:100%; */
+    margin-top: 40px;
+}
+
+.mypage-right-box { 
+    width: 500px;
+    height: 300px;
+    border:1px solid;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 30px;
+
+}
+
+.mypage-right-box>ul:nth-child(1) {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: start;
+    width:50%;
+    margin-left : 50px;
+    gap:20px;
+    font-size: 1.5rem;
+    font-weight:800;
+    
+}
+.mypage-right-box>ul:nth-child(2) {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: end;
+    width:50%;
+    margin-right: 50px;
+    gap:20px;
+    font-size: 1.5rem;
+    font-weight:800;
+
+}
+
+.mypage-center {
+    
+    background-color: #EEEDED;
+    height:400px;
+    /* margin: 80px; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.mypage-center>p {
+    font-size: 2.2rem;
+    font-weight: 600;
+    border:1px solid;
+    height:300px;
+    width:100%;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.mypage-footer {
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-size: 2.2rem;
+    gap: 90px;
+    padding:0 30px;
+    
+    margin-top: 100px;
+    font-weight:800;
+}

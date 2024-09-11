@@ -1,0 +1,229 @@
+@media all and (max-width : 830px) {
+
+
+
+    table {
+        border-top: solid 1.5px black;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 12px;
+        /* display: block;  */
+      }
+      
+      thead {
+        text-align: center;
+        font-weight: bold;
+      }
+      
+      tbody {
+        font-size: 12px;
+      }
+      tfoot{
+        padding: 10px 0;
+        background-color: #f9f9f9;
+        border-top: 2px solid #ddd;
+        
+      }
+      
+      td {
+        padding: 15px 0px;
+        border-bottom: 1px solid lightgrey;
+      }
+      .input[type="checkbox"] {
+       
+      }
+      h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        font-size: 22px;
+      }
+      
+      .cart__list__detail :nth-child(3) {
+        /* vertical-align: top; */
+      }
+      
+      .cart__list__detail :nth-child(3) a {
+        font-size: 15px;
+      }
+      
+      .cart__list__detail :nth-child(3) p {
+        margin-top: 6px;
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .item-checkbox{
+       /* position: absolute; */
+      }
+     
+      
+      .cart__list__smartstore {
+        font-size: 11px;
+        color: gray;
+      }
+      
+      .cart__list__option {
+        /* vertical-align: top; */
+        padding: 15px;
+        
+      }
+      .cart__list__option>.cost {
+        text-decoration: line-through;
+        color: lightgray;
+      }
+      .cart__list__option>input{
+        border: none;
+        width: 40px;
+        border-color: black;
+      }
+      
+      .like{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+      }
+      .cart__list__optionbtn1,
+      .cart__list__optionbtn2 {
+        background-color: white;
+        font-size: 12px;
+        border: 1px solid lightgray;
+        padding: 5px;
+        cursor: pointer;
+        
+       
+      }
+      .cart__list__optionbtn2 {
+        background-color: white;
+        font-size: 12px;
+        border: 1px solid lightgray;
+        padding: 5px;
+        cursor: pointer;
+      }
+      
+      .left-buttons {
+        display: flex;
+        gap: 10px; 
+      }
+    
+      .right-button {
+        margin-left: auto; 
+      }
+      
+      
+      .cart__list__detail :nth-child(4),
+      .cart__list__detail :nth-child(5),
+      .cart__list__detail :nth-child(6) {
+        border-left: 2px solid whitesmoke;
+      }
+      
+      .cart__list__detail :nth-child(5),
+      .cart__list__detail :nth-child(6) {
+        text-align: center;
+      }
+      
+      .cart__list__detail :nth-child(5) button {
+        /* background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 4px 8px;
+        font-size: 12px;
+        margin-top: 5px;
+        cursor: pointer; */
+        display: none;
+      }
+      
+      .price {
+        /* font-weight: bold; */
+        font-size: 12px;
+        
+      }
+      
+      .cart__mainbtns {
+        width: 420px;
+        height: 200px;
+        padding-top: 40px;
+        display: block;
+        margin: auto;
+      }
+      
+      .cart__bigorderbtn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        margin: auto;
+        border-radius: 5px;
+      }
+      
+      .cart__bigorderbtn.left {
+        background-color: white;
+        border: 1px lightgray solid;
+      }
+      
+      .cart__bigorderbtn.right {
+        color: white;
+        border: none;
+      }
+    
+      .cart__list__Calc {
+        width: 100%;
+        font-size: 13px; 
+      }
+      
+      .cart__list__Calc th,
+      .cart__list__Calc td {
+        padding: 8px;
+        text-align: center;
+        border: 1px solid rgba(200, 200, 200, 0.5)
+      }
+      .cart__list__Calc th{
+        background-color: rgba(245, 244, 244, 0.62);
+        height: 50px;
+        
+      }
+      .cart__list__Calc td{
+        font-size: 13px;
+      }
+      .cart__list__Calcs{
+        height: 100px;
+      }
+      .cart__Clac__btn{
+        background-color: white;
+        font-size: 12px;
+        /* border: lightgrey solid 1px; */
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        gap: 12px;
+        margin-top: 15px;
+        
+      }
+      .cart__Clac__btn button {
+        width: 100px; 
+        height: 30px;
+        border: none; 
+        background-color: #f0f0f0; 
+        font-size: 12px;
+        cursor: pointer;
+      
+      }
+      
+      
+      
+      
+    /*  */
+    
+    .page{
+      height: 1000px;
+    }
+    
+    
+    
+    
+}

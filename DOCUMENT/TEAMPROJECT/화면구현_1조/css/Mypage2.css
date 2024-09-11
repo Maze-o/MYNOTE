@@ -1,0 +1,158 @@
+/* 마이페이지 */
+.mypage-wrapper {
+    width:100%;
+    margin: 0 auto;
+    height: 1600px;
+    margin: 150px 0;
+}
+
+.mypage-header {
+    width: 100%;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    background-color: #EEEDED;
+    
+    border: 1px solid;
+}
+
+.mypage-header-left { 
+    width:100%;
+    height: 50%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border: none;
+}
+
+.mypage-header-left> * {
+}
+
+.mypage-left-profile{
+    height: 25vw;
+    width: 300px;
+}
+
+.mypage-left-profile>img {
+    object-fit: contain;
+    width:100%;
+    height:100%;  
+}
+
+.mypage-left-ul>li {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px;
+    white-space:nowrap;
+
+}
+
+
+.mypage-right {
+  
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    height:50%;
+    width:100%;
+    flex-direction: column;
+    border-top: 1px solid;
+    padding-bottom: 10px;
+}
+
+.mypage-right-top {
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    font-weight: 900;
+    font-size: 1.4rem;
+}   
+
+.mypage-right-box {
+    background-color: white;
+    /* height:350px; */
+    margin-top: 40px;
+}
+
+.mypage-right-box { 
+    width: 60%;
+    height: 60%;
+    border:1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-right-box>ul:nth-child(1) {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: start;
+    width:50%;
+    margin-left : 50px;
+    font-size: 1.2rem; 
+    font-weight:800;
+    
+}
+.mypage-right-box>ul:nth-child(2) {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: end;
+    width:50%;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    font-weight:800;
+
+}
+
+.mypage-center {
+    
+    background-color: #EEEDED;
+    height:450px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.mypage-center>div>img{
+    width: 200px;
+    height: 200px;
+}
+
+.mypage-center> * {
+    padding: 10px 0;
+}
+
+.mypage-center>p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border:1px solid;
+    height:250px;
+    width:100%;
+    margin: 10px;
+    display:flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.mypage-footer {
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 45px;
+    padding:0 30px;
+    
+    margin-top: 100px;
+    font-weight:800;
+}

@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.layout {
+    width: 83.333vw;
+    margin: 0 auto;
+
+}
+
+.top-header {
+    height: 168px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    border-bottom: 1px solid;
+    position: relative;
+
+}
+
+.top-header-left>ul {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+
+.top-header-left-block {
+
+    padding-right: 5px;
+}
+
+/* 로고 img 툴팁 관련 css */
+.logoimg {
+    padding: 0;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: all .2s ease;
+    font-size: 11px;
+    font-family: dotum;
+    letter-spacing: -1px;
+}
+
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    height: 23px;
+    position: absolute;
+    top: -20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background: #333;
+    box-shadow: 0 3px 8px rgba(165, 165, 165, 0.5);
+}
+
+[data-tooltip]:after {
+    content: '';
+    border-left: 5px solid transparent;
+    top: 2px;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+}
+
+[data-tooltip]:not([data-tooltip=""]):hover:before {
+    visibility: visible;
+    opacity: 1;
+    /* category글씨 박스 위치 */
+    top: -60px;
+}
+
+[data-tooltip]:not([data-tooltip=""]):hover:after {
+    visibility: visible;
+    opacity: 1;
+    /* category글씨 박스 밑 화살표 위치 */
+    top: -37px;
+}
+
+.top-header-middle {
+    font-weight: 1000;
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-header-right>ul {
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.top-header-right>ul>li {
+    padding: 0 2px;
+    position: relative;
+
+}
+
+.search-box {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 50px;
+    padding: 10px;
+}
+
+.search-form {
+    display: flex;
+    height: 100%;
+}
+
+.search-txt {
+    height: 100%;
+    border: 1px solid rgba(165, 165, 165, 0.5);
+    border-radius: 40px;
+    color: black;
+    font-size: 15px;
+    line-height: 40px;
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.search-box input::placeholder {
+    color: #c0c0c0;
+}
+
+
+.search-btn {
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+
+}
+
+.right-icon {
+
+    height: 100%;
+}
+
+
+
+
+.mainmenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mainmenu>li {
+    margin: 15px;
+    font-size: 1.6rem;
+    padding: 0 5%;
+}
+
+.submenubtn {
+    position: absolute;
+    padding-top: 35px;
+
+}
+
+.submenubtn>li {
+    font-size: 1.6rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+
+.mainmenu:hover .submenubtn>li {
+
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.swiper {
+    width: 100%;
+    margin-top: 150px;
+    height: 600px;
+    position: relative;
+}
+
+.swiper-slide>img {
+    width: 100%;
+    height: 600px;
+    object-fit: fill;
+}
+
+
+
+.imageline {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.imageline>span>a>img {
+    margin: 50px 0 50px;
+}
+
+.footer-block {
+    width: 100%;
+    background-color: black;
+    opacity: 0.9;
+    position: relative;
+    height: 200px;
+    display: flex;
+    color: white;
+
+}
+
+.footer-left {
+    padding: 15px;
+}
+
+.footer-right {
+    width: 45%;
+    display: flex;
+    justify-content: right;
+    align-items: start;
+    padding-top: 15px;
+}
+
+.footer-bottom {
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+}
+
+
+
+/* 사이드바 버튼 숨기기  */
+.mideaquery-btn {
+    display: none;
+}

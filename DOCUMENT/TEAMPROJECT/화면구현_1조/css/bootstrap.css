@@ -1,0 +1,152 @@
+.offcanvas {
+    width: 280px;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+/* 사이드바 상단 p태그 */
+.offcanvas-title {
+    height: 30px;
+    /* white-space:none; */
+    font-size: .8rem;
+    /* line-height:30px; */
+    margin: 0px 0px 0px 0px;
+    word-break: break-all
+}
+
+.offcanvas-header {
+    display:flex;
+    justify-content: right;
+}
+
+.offcanvas-body-sign {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.offcanvas-body-sign li {
+    border: 1px solid #888;
+    /* padding: 7px 40px; */
+    width: 120px;
+    height: 35px;
+    display: inline-block;
+}
+
+.offcanvas-body-sign>li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 4px;
+}
+
+
+.offcanvas-body-sign>li:nth-child(1) {
+    background-color: black;
+}
+
+.offcanvas-body-login {
+    color: white;
+    width: 50%;
+
+}
+
+.offcanvas-body-join {
+    color: #333;
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 10px;
+    color: black;
+
+}
+
+.navbar-toggler {
+    z-index: 9999;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+/* 오른쪽 사이드바 마이페이지 */
+.rightoffcanvas-mypage {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    height: 50%;
+    margin-top: 20px ;
+    margin-bottom: 50px;
+    height: 250px;
+}
+
+.rightoffcanvas-mypage>li {
+
+}
+
+
+
+/* .cart {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.material-symbols-outlined {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    width:100%;
+    text-align: center;
+}
+
+.cart>span {
+    display:block;
+    width:50px;
+
+}
+
+.rightoffcanvas-mypage>li>a::after {
+    /* background-color: aqua; */
+
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    font-size: .8rem;
+
+
+    
+}
+
+.cart>a::after {
+    content: "장바구니";
+    width:100%;
+    text-align: center;
+}
+
+.list-alt>a::after {
+    content: "주문 내역";
+}
+
+.cancel>a::after { 
+    content:"취소/반품 \A 교환 내역";
+    white-space: pre;
+
+}
+
+
+.person>a::after {
+    content:"마이페이지";
+}
+
+.search>a::after{ 
+    content:"검색"
+}
+
+h2 {
+    font-weight: 900;
+}

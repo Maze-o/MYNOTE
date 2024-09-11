@@ -1,0 +1,260 @@
+/* 회원가입 */
+.wrapper>main>.join{
+    height: 1100px;
+    margin-top: 150px;
+    /* width: 100vw; */
+    /* border: 1px solid; */
+    
+}
+.wrapper>main>.join>p{
+    height: 100px;
+    margin: 0 23% auto;
+    margin-bottom: 5%;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-bottom: 2px solid lightgray;
+}
+.wrapper>main>.join>.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 이메일 */
+.wrapper>main>.join>.signup>form>.email{
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrapper>main>.join>.signup>form>.email>#email_name{
+    width: 550px;
+    height: 50px;
+    
+    border: none;
+    border-bottom: 2px solid lightgray;
+    
+    font-size: 1.7rem;
+    font-weight: 400;
+    /* padding: 0 10px; */
+}
+.wrapper>main>.join>.signup>form>.email>select{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+
+    /* padding: 0 10px; */
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    
+}
+.wrapper>main>.join>.signup>form>.email>select>option{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.wrapper>main>.join>.signup>form>.email>label{
+    margin-top: 20px;
+    width: 650px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    /* position: absolute; */
+    /* top:calc(50% - 12.5px); */
+    /* z-index: 5; */
+    background-color: lightgray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    
+}
+.wrapper>main>.join>.signup>form>.email>label>a{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.wrapper>main>.join>.signup>form>.email>#email_confirm{
+    width: 500px;
+    height: 50px;
+    
+    border: none;
+    /* border-bottom: 1px solid; */
+    
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0 10px;
+}
+.wrapper>main>.join>.signup>form>.email>button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    cursor:pointer;
+    position: absolute;
+    right: 0;
+}
+
+
+/* 비밀번호 */
+.wrapper>main>.join>.signup>form>.password{
+    margin: 0 auto;
+
+}
+.wrapper>main>.join>.signup>form>.password>input{
+    width: 700px;
+    height: 50px;
+    
+    border: none;
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    
+    font-size: 1.2rem;
+    padding: 0 10px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    
+}
+
+
+/* 이름 */
+.wrapper>main>.join>.signup>form>.username{
+    margin: 0 auto;
+    
+}
+.wrapper>main>.join>.signup>form>.username>input{
+    width: 700px;
+    height: 50px;
+    
+    border: none;
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0 10px
+}
+
+/* 주소 */
+.wrapper>main>.join>.signup>form>.address{
+    margin: 0 auto;
+    position: relative;
+    width: 700px;
+    
+}
+.wrapper>main>.join>.signup>form>.address>#postcode{   
+    width: 600px;
+    height: 50px;
+    
+    border: none;
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0 10px;
+    
+}
+.wrapper>main>.join>.signup>form>.address>label{
+    position: absolute;
+    top: 14px;
+    right: 0;
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    padding-bottom: 10px;
+}
+.wrapper>main>.join>.signup>form>.addresss>label>a{
+    
+}
+
+.wrapper>main>.join>.signup>form>.address>#detailed_address{
+    width: 700px;
+    height: 50px;
+    
+    border: none;
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+/* 전화번호 */
+.wrapper>main>.join>.signup>form>.phone{
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrapper>main>.join>.signup>form>.phone>input{
+    width: 550px;
+    height: 50px;
+    
+    border: none;
+  
+    
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.wrapper>main>.join>.signup>form>.phone>#phone_number{
+    width: 550px;
+    height: 50px;
+    
+    border: none;
+    /* border-bottom: 1px solid; */
+    
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0 10px;
+}
+.wrapper>main>.join>.signup>form>.phone>button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor:pointer;
+    position: absolute;
+    right: 0;
+    
+}
+.wrapper>main>.join>.signup>form>.signbutton{
+    padding-top: 25px;
+}
+.wrapper>main>.join>.signup>form>.signbutton>button{    
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    padding: 0 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor:pointer;}
+
+.wrapper>main>.join>.signup>form>.signback{
+        padding-top: 15px;
+}
+.wrapper>main>.join>.signup>form>.signback>button{    
+        width: 100%;
+        height: 50px;
+        border: 1px solid;
+        padding: 0 10px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        cursor:pointer;}
+    
