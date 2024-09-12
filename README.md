@@ -36,9 +36,10 @@
 |JS|[바로가기](https://github.com/Maze-o/MYNOTE/tree/main/DOCUMENT/%ED%99%94%EB%A9%B4%EA%B5%AC%ED%98%84/JS)|
 
 
-
-
-
+<h1>5. 프로그래밍 언어</h1>
+|제목|링크|
+|----------|---|
+|JAVA|[바로가기](https://github.com/Mazeo/MYNOTE/tree/main/DOCUMENT/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4)|
 
 
 
