@@ -225,7 +225,7 @@ interface - 속성 : public static final
             결합도를 낮추기 위함
             다중 상속 가능 (implements)
 	    
-
+	
 ```
 
 
