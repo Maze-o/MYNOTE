@@ -42,6 +42,11 @@
 |----------|---|
 |JAVA|[바로가기](https://github.com/Maze-o/MYNOTE/tree/main/DOCUMENT/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4)|
 
+<h1>6. DB</h1>
+
+|제목|링크|
+|----------|---|
+|ORACLE DB|[바로가기](https://github.com/Maze-o/MYNOTE/tree/main/DOCUMENT/DB)|
 
 
 
