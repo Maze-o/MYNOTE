@@ -1,3 +1,7 @@
+<h1>Velog에 정리중입니다!</h1>
+
+[바로가기](https://velog.io/@ilsame9970/posts)
+
 <h1>1. 응용SW 기초활용</h1>	
 
 |제목|링크|
